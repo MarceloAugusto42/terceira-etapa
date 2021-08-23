@@ -167,7 +167,7 @@ int main()
         default: printf("\n\n\n\n  JOGO NAO LISTADO  \n\n\n");
 
         }
-        printf(" (Digite 1 para aceitar ou qualquer numero para negar)\n Deseja continuar vendo o catalogo?:");
+        printf(" (Digite 1 para aceitar ou 0 numero para negar)\n Deseja continuar vendo o catalogo?:");
                          scanf("%d",&cat);
         }
             break;
