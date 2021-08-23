@@ -21,7 +21,7 @@ int main()
     printf("\n\n------------BEM VINDO AO RPG PASS---------------\n\n");
     printf("\n\n Aqui temos diversos RPGs que podem ser alugados e \njogados");
     printf(", e nao se preocupe, sao todos jogos leves!!!\n\n");
-    printf("\n\n---------------CASDASTRE-SE--------------\n\n");
+    printf("\n\n---------------CADASTRE-SE--------------\n\n");
     printf("\n Maximo de caracteres para: Login=15, Senha=4");
         printf("\n Login:");
         scanf("%s",user);
