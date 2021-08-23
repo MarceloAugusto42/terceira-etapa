@@ -200,37 +200,37 @@ int main()
                 totalP=totalP+(quantidade*49.90);
                 break;
             case 2:
-                totalP=totalP+(quantidade*169,90);
+                totalP=totalP+(quantidade*169.90);
                 break;
             case 3:
-                totalP=totalP+(quantidade*28,90);
+                totalP=totalP+(quantidade*28.90);
                 break;
             case 4:
-                totalP=totalP+(quantidade*19,90);
+                totalP=totalP+(quantidade*19.90);
                 break;
             case 5:
-                totalP=totalP+(quantidade*37,90);
+                totalP=totalP+(quantidade*37.90);
                 break;
             case 6:
-                totalP=totalP+(quantidade*19,90);
+                totalP=totalP+(quantidade*19.90);
                 break;
             case 7:
-                totalP=totalP+(quantidade*36,90);
+                totalP=totalP+(quantidade*36.90);
                 break;
             case 8:
-                totalP=totalP+(quantidade*19,90);
+                totalP=totalP+(quantidade*19.90);
                 break;
             case 9:
                 totalP=totalP+(quantidade*0);
                 break;
             case 10:
-                totalP=totalP+(quantidade*24,90);
+                totalP=totalP+(quantidade*24.90);
                 break;
             case 11:
                 totalP=totalP+(quantidade*0);
                 break;
             case 12:
-                totalP=totalP+(quantidade*19,90);
+                totalP=totalP+(quantidade*19.90);
                 break;
             }
           }
