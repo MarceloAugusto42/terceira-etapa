@@ -239,10 +239,10 @@ int main()
         case 4: printf("\nO preco a ser pago e %.2f", totalP);
             break;
         case 5: printf("Seu login e senha atuais sao %s e %s",user, senha);
-                printf("\nDigite seu novo login: ");
+                printf("\nDigite seu novo login(max 15 caracteres): ");
                 fflush(stdin);
                 scanf("%s", user);
-                printf("Digite sua nova senha: ");
+                printf("Digite sua nova senha(max 4 caracteres): ");
                 fflush(stdin);
                 scanf("%s", senha);
                 printf("Seu novo login eh %s e sua nova senha eh %s",user, senha);
@@ -260,7 +260,7 @@ int main()
             fgets(indc.distr,INDICA, stdin);
             break;
         case 7: printf("Nome do jogo indicado: %s", indc.namegame);
-                printf("Data do lançamento: %s", indc.lanc);
+                printf("Data do lanÃ§amento: %s", indc.lanc);
                 printf("Desenvolvedor: %s", indc.desen);
                 printf("Distribuidora: %s", indc.distr);
             break;
