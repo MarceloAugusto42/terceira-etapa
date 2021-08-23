@@ -260,7 +260,7 @@ int main()
             fgets(indc.distr,INDICA, stdin);
             break;
         case 7: printf("Nome do jogo indicado: %s", indc.namegame);
-                printf("Data do lançamento: %s", indc.lanc);
+                printf("Data do lancamento: %s", indc.lanc);
                 printf("Desenvolvedor: %s", indc.desen);
                 printf("Distribuidora: %s", indc.distr);
             break;
