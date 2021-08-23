@@ -18,9 +18,11 @@ int main()
     int menu, njogo, cat, opJogos, quantidade;
     char user[USUARIO], senha[SENHA] , senhac[SENHA];
 
+    //Boas Vindas
     printf("\n\n------------BEM VINDO AO RPG PASS---------------\n\n");
     printf("\n\n Aqui temos diversos RPGs que podem ser alugados e \njogados");
     printf(", e nao se preocupe, sao todos jogos leves!!!\n\n");
+    //Cadastro
     printf("\n\n---------------CADASTRE-SE--------------\n\n");
     printf("\n Maximo de caracteres para: Login=15, Senha=4");
         printf("\n Login:");
@@ -38,6 +40,8 @@ int main()
              printf("\nSenhas diferentes, tente novamente.\n");
                 }
          }
+    
+    //MENU
          system("cls");
     do{
     printf("\n\n------------------------MENU-------------------------------\n\n");
@@ -50,6 +54,7 @@ int main()
     printf("\n Digite o que voce deseja fazer: ");
     scanf("%d", &menu);
     switch(menu){
+        //Catalogo
         case 1: while(cat!=0){
 
     printf("\n\n  Veja nosso imenso catalogo de jogos:\n\n  Chrono Trigger(1)  Chrono Cross(2)  Chroma Squad(3)");
@@ -171,6 +176,7 @@ int main()
                          scanf("%d",&cat);
         }
             break;
+        //Loja para alugar os jogos
         case 2:
             printf("\n Alugue quantos jogos quiser!!!");
             printf("\n\nJogos\t\t\tNumero   Preco");
@@ -234,8 +240,10 @@ int main()
           }
         }while(opJogos!=0);
             break;
+        //Exibir o preço total a ser pago
         case 3: printf("\nO preco a ser pago e %.2f", totalP);
             break;
+        //Trocar o login e a senha
         case 4: printf("Seu login e senha atuais sao %s e %s",user, senha);
                 printf("\nDigite seu novo login(max 15 caracteres): ");
                 fflush(stdin);
@@ -245,6 +253,7 @@ int main()
                 scanf("%s", senha);
                 printf("Seu novo login eh %s e sua nova senha eh %s",user, senha);
             break;
+        //Indicar jogo para a loja
         case 5: printf("Digite o nome do jogo: ");
                 fflush(stdin);
             fgets(indc.namegame,INDICA,stdin);
@@ -257,12 +266,14 @@ int main()
                 printf("Digite a distribuidora : ");
             fgets(indc.distr,INDICA, stdin);
             break;
+        //Exibir jogo indicado
         case 6: printf("Nome do jogo indicado: %s", indc.namegame);
                 printf("Data do lancamento: %s", indc.lanc);
                 printf("Desenvolvedor: %s", indc.desen);
                 printf("Distribuidora: %s", indc.distr);
             break;
-
+        
+        //Mensagem de adeus
         default: printf("\ntchau!!\n");
         menu=0;
             break;
