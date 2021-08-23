@@ -41,11 +41,11 @@ int main()
          system("cls");
     do{
     printf("\n\n------------------------MENU-------------------------------\n\n");
-    printf("\t 1.Para ver o catalogo com informacoes\n\t 2.Altere seu cadastro\n");
-    printf("\t 3.Alugar jogos e exibir o total a ser pago\n");
-    printf("\t 4.Exibir total a pagar");
-    printf("\n\t 5.Alterar login e senha");
-    printf("\n\t 6.Indicar jogos para loja\n\t 7.Exibir indicacao\n");
+    printf("\t 1.Para ver o catalogo com informacoes\n\");
+    printf("\t 2.Alugar jogos e exibir o total a ser pago\n");
+    printf("\t 3.Exibir total a pagar");
+    printf("\n\t 4.Alterar login e senha");
+    printf("\n\t 5.Indicar jogos para loja\n\t 6.Exibir indicacao\n");
     printf("\t Qualquer outro numero para sair\n\n");
     printf("\n Digite o que voce deseja fazer: ");
     scanf("%d", &menu);
@@ -171,9 +171,7 @@ int main()
                          scanf("%d",&cat);
         }
             break;
-        case 2: printf("\nt\n");
-            break;
-        case 3:
+        case 2:
             printf("\n Alugue quantos jogos quiser!!!");
             printf("\n\nJogos\t\t\tNumero   Preco");
             printf("\nChrono Trigger\t\t   1   R$49,90");
@@ -236,9 +234,9 @@ int main()
           }
         }while(opJogos!=0);
             break;
-        case 4: printf("\nO preco a ser pago e %.2f", totalP);
+        case 3: printf("\nO preco a ser pago e %.2f", totalP);
             break;
-        case 5: printf("Seu login e senha atuais sao %s e %s",user, senha);
+        case 4: printf("Seu login e senha atuais sao %s e %s",user, senha);
                 printf("\nDigite seu novo login(max 15 caracteres): ");
                 fflush(stdin);
                 scanf("%s", user);
@@ -247,7 +245,7 @@ int main()
                 scanf("%s", senha);
                 printf("Seu novo login eh %s e sua nova senha eh %s",user, senha);
             break;
-        case 6: printf("Digite o nome do jogo: ");
+        case 5: printf("Digite o nome do jogo: ");
                 fflush(stdin);
             fgets(indc.namegame,INDICA,stdin);
                 printf("Digite o lancamento do jogo: ");
@@ -259,7 +257,7 @@ int main()
                 printf("Digite a distribuidora : ");
             fgets(indc.distr,INDICA, stdin);
             break;
-        case 7: printf("Nome do jogo indicado: %s", indc.namegame);
+        case 6: printf("Nome do jogo indicado: %s", indc.namegame);
                 printf("Data do lancamento: %s", indc.lanc);
                 printf("Desenvolvedor: %s", indc.desen);
                 printf("Distribuidora: %s", indc.distr);
